@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Games</ion-icon></a>
+        <nav class="nav">
+            <button class="logout">Logout</button>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <div class="tictactoe">
+            <h1 id="Titile">Tic Tac Toe</h1>
+            <div class="tictactoe-playing-choice">
+                <button id="player-2">2 PLAYERS</button>
+                <button id="computer">PLAY VS COMPUTER</button>
+                <div>
+                    <select name="player" class="player-name" id="tic-tac-toe-player">
+                    </select>
+                    <select name="choice"  id="tic-tac-toe-choice">
+                        <option value="X">X</option>
+                        <option value="O">O</option>
+                    </select>
+                    <button class="send-btn">SEND</button>
+                </div>
+            </div>
+            <div class="tictactoe-target">
+                <h1 class="headline">View</h1>
+                <p class="tictactoe-down-arrow"><i class="arrow down"></i></p>
+                <p class="tictactoe-up-arrow"><i class="arrow up"></i></p>
+            </div>
+        </div>
+
+        <div class="tictactoe-dashboard">
+            <table class="tictactoe-table">
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Choice</th>
+                    <th>play Now</th>
+                </tr>
+            </table>
+            <h1>No List</h1>
+        </div>
+
+        <div class="chess">
+            <h1 id="Titile">Chess</h1>
+            <div class="chess-playing-choice">
+                <button id="player-2">2 PLAYERS</button>
+                <div>
+                    <select name="player" class="player-name" id="chess-player">
+                    </select>
+                    <select name="choice" id="chess-choice">
+                        <option value="white">WHITE</option>
+                        <option value="black">BLACK</option>
+                    </select>
+                    <button class="send-btn">SEND</button>
+                </div>
+            </div>
+            <div class="chess-target">
+                <h1 class="headline">View</h1>
+                <p class="chess-down-arrow"><i class="arrow down"></i></p>
+                <p class="chess-up-arrow"><i class="arrow up"></i></p>
+            </div>
+        </div>
+
+        <div class="chess-dashboard">
+            <table class="chess-table">
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Choice</th>
+                    <th>play Now</th>
+                </tr>
+            </table>
+            <h1>No List</h1>
+        </div>
+
+        <div class="sudoku">
+            <h1 id="Titile">Sudoku</h1>
+            <div class="sudoku-target">
+                <div class="time">
+                    <h1 class="headline">Time</h1>
+                    <p id="time"><span id="minutes"></span> : <span id="seconds"></span></p>
+                </div>
+                <div class="mistake">
+                    <h1 class="headline">Mistake</h1>
+                    <p id="mistake">0</p>
+                </div>
+            </div>
+            <div class="play-btn">
+                <button id="play-btn">PLAY</button>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+</body>
+
+</html>

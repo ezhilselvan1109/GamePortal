@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        
+        <a href="http://localhost:8080/Games/" class="logo">Games</ion-icon></a>
+        <h1 id="game-title">Chess</h1>
+        <nav class="nav">
+            <button class="logout">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="white-container">
+            <div class="coins-header">
+                <h3>White</h3>
+            </div>
+            <div class="coins">
+            </div>
+        </div>
+        <div class="board">
+            <div class="border-top"></div>
+            <div class="border-top">A</div>
+            <div class="border-top">B</div>
+            <div class="border-top">C</div>
+            <div class="border-top">D</div>
+            <div class="border-top">E</div>
+            <div class="border-top">F</div>
+            <div class="border-top">G</div>
+            <div class="border-top">H</div>
+            <div class="border-top"></div>
+
+            <div class="border-left">8</div>
+            <div class="box white" id="00">&#9820</div>
+            <div class="box black" id="01">&#9822</div>
+            <div class="box white" id="02">&#9821</div>
+            <div class="box black" id="03">&#9819</div>
+            <div class="box white" id="04">&#9818</div>
+            <div class="box black" id="05">&#9821</div>
+            <div class="box white" id="06">&#9822</div>
+            <div class="box black" id="07">&#9820</div>
+            <div class="border-right">8</div>
+
+            <div class="border-left">7</div>
+            <div class="box black" id="10">&#9823</div>
+            <div class="box white" id="11">&#9823</div>
+            <div class="box black" id="12">&#9823</div>
+            <div class="box white" id="13">&#9823</div>
+            <div class="box black" id="14">&#9823</div>
+            <div class="box white" id="15">&#9823</div>
+            <div class="box black" id="16">&#9823</div>
+            <div class="box white" id="17">&#9823</div>
+            <div class="border-right">7</div>
+
+            <div class="border-left">6</div>
+            <div class="box white" id="20"></div>
+            <div class="box black" id="21"></div>
+            <div class="box white" id="22"></div>
+            <div class="box black" id="23"></div>
+            <div class="box white" id="24"></div>
+            <div class="box black" id="25"></div>
+            <div class="box white" id="26"></div>
+            <div class="box black" id="27"></div>
+            <div class="border-right">6</div>
+
+            <div class="border-left">5</div>
+            <div class="box black" id="30"></div>
+            <div class="box white" id="31"></div>
+            <div class="box black" id="32"></div>
+            <div class="box white" id="33"></div>
+            <div class="box black" id="34"></div>
+            <div class="box white" id="35"></div>
+            <div class="box black" id="36"></div>
+            <div class="box white" id="37"></div>
+            <div class="border-right">5</div>
+
+            <div class="border-left">4</div>
+            <div class="box white" id="40"></div>
+            <div class="box black" id="41"></div>
+            <div class="box white" id="42"></div>
+            <div class="box black" id="43"></div>
+            <div class="box white" id="44"></div>
+            <div class="box black" id="45"></div>
+            <div class="box white" id="46"></div>
+            <div class="box black" id="47"></div>
+            <div class="border-right">4</div>
+
+            <div class="border-left">3</div>
+            <div class="box black" id="50"></div>
+            <div class="box white" id="51"></div>
+            <div class="box black" id="52"></div>
+            <div class="box white" id="53"></div>
+            <div class="box black" id="54"></div>
+            <div class="box white" id="55"></div>
+            <div class="box black" id="56"></div>
+            <div class="box white" id="57"></div>
+            <div class="border-right">3</div>
+
+            <div class="border-left">2</div>
+            <div class="box white" id="60">&#9817</div>
+            <div class="box black" id="61">&#9817</div>
+            <div class="box white" id="62">&#9817</div>
+            <div class="box black" id="63">&#9817</div>
+            <div class="box white" id="64">&#9817</div>
+            <div class="box black" id="65">&#9817</div>
+            <div class="box white" id="66">&#9817</div>
+            <div class="box black" id="67">&#9817</div>
+            <div class="border-right">2</div>
+
+            <div class="border-left">1</div>
+            <div class="box black" id="70">&#9814</div>
+            <div class="box white" id="71">&#9816</div>
+            <div class="box black" id="72">&#9815</div>
+            <div class="box white" id="73">&#9813</div>
+            <div class="box black" id="74">&#9812</div>
+            <div class="box white" id="75">&#9815</div>
+            <div class="box black" id="76">&#9816</div>
+            <div class="box white" id="77">&#9814</div>
+            <div class="border-right">1</div>
+
+            <div class="border-buttom"></div>
+            <div class="border-buttom">A</div>
+            <div class="border-buttom">B</div>
+            <div class="border-buttom">C</div>
+            <div class="border-buttom">D</div>
+            <div class="border-buttom">E</div>
+            <div class="border-buttom">F</div>
+            <div class="border-buttom">G</div>
+            <div class="border-buttom">H</div>
+            <div class="border-buttom"></div>
+        </div>
+        <div class="black-container">
+            <div class="coins-header">
+                <h3>Black</h3>
+            </div>
+            <div class="coins">
+            </div>
+        </div>
+    </div>
+    <div class="pawn">
+        <div class="white">
+            <div class="coin">&#9814</div>
+            <div class="coin">&#9816</div>
+            <div class="coin">&#9815</div>
+            <div class="coin">&#9813</div>
+        </div>
+        <div class="black">
+            <div class="coin">&#9820</div>
+            <div class="coin">&#9822</div>
+            <div class="coin">&#9821</div>
+            <div class="coin">&#9819</div>
+        </div>
+    </div>
+    <div class="win">
+        <h2>Check Mate</h2>
+        <h5>White</h5>
+        <h1>WIN</h1>
+    </div>
+    <div class="message">
+        <h2></h2>
+    </div>
+    <script src="chess.js"></script>
+</body>
+
+</html>

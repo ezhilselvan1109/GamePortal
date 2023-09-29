@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <webcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </webcome-file-list>
+</web-app>

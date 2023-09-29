@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="http://localhost:8080/Games/" class="logo">Games</ion-icon></a>
+        <h1 id="game-title">Tic Tac Toe</h1>
+        <nav class="nav">
+            <button class="logout">Logout</button>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="message">
+            <h2></h2>
+        </div>
+        <div class="list">
+            <p class="x shife-bg">Player X <span></span></p>
+            <p class="tie">Tie<span></span></p>
+            <p class="o">Player O <span></span></p>
+            <button id="new-game">New Game </button>
+        </div>
+        <div class="board">
+            <div class="outer-grid">
+                <div class="inner-grid" id="0"></div>
+                <div class="inner-grid" id="1"></div>
+                <div class="inner-grid" id="2"></div>
+                <div class="inner-grid" id="3"></div>
+                <div class="inner-grid" id="4"></div>
+                <div class="inner-grid" id="5"></div>
+                <div class="inner-grid" id="6"></div>
+                <div class="inner-grid" id="7"></div>
+                <div class="inner-grid" id="8"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="http://localhost:8080/Games/" class="logo">Games</ion-icon></a>
+    </header>
+
+    <section class="home">
+        <!-- navigation -->
+        <div class="context">
+           <div>
+                <h2>Life is short, play more games.</h2>
+                <div class="games-list">
+                    <h1>Our Games</h1>
+                    <ul>
+                        <li>Tic Tac Toe</li>
+                        <li>Sudoku</li>
+                        <li>Chess</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h1>Play with ></h1>
+                    <ul>
+                        <li>Two Players</li>
+                        <li>Computer</li>
+                        <li>Web Socket</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-container">
+
+            <!-- Message -->
+            <div class="wrapper-login" id="message">
+                <div class="register-link">
+                    <h3 id="result"></h3>
+                    <p>Please &nbsp;<a id="sign-in-bt" style="color: green;">Sign In now</a></p>
+                </div>
+            </div>
+
+            <!-- sign-in Forms -->
+            <div class="wrapper-login" id="sign-in">
+                <h2>Sign In</h2>
+                <p id="signin-error-message"></p>
+                <form>
+                    <div class="input-box email">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input class="sign-in-email" type="email" name="email">
+                        <label>Enter your E-mail</label>
+                    </div>
+                    <div class="input-box password">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input class="sign-in-password" type="password" name="password">
+                        <label>Enter your Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="remember">Remember Me</label>
+                        <a id="forgot-btn">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Sign In</button>
+                    <div class="register-link">
+                        <p>Not a member? <a id="sign-up-btn">Sign up now</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- forgot Form -->
+            <div class="wrapper-login" id="forgotPassword">
+                <h2>Update Password</h2>
+                <p id="error-message"></p>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="email">
+                        <label>Enter your E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password" name="password" id="">
+                        <label>Create your Password</label>
+                    </div>
+                    <button type="submit" class="btn" id="forgot">Submit</button>
+                </form>
+            </div>
+
+            <!-- sign up Form -->
+            <div class="wrapper-login" id="sign-up">
+                <h2>Sign Up</h2>
+                <p id="error"></p>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="contact"></ion-icon></span>
+                        <input type="text" name="name">
+                        <label>Enter your Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="email">
+                        <label>Enter your E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                        <input type="password" name="password">
+                        <label>Create your Password</label>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                    <div class="register-link">
+                        <p>Already a member? <a id="sign-in-btn">Sign In now</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
